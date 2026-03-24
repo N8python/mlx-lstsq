@@ -2,6 +2,8 @@
 
 `mlx-lstsq` provides least-squares solvers for [MLX](https://github.com/ml-explore/mlx) backed by custom Apple Metal Performance Shaders kernels.
 
+> This package is intended for well-conditioned least-squares problems with low matrix condition numbers. It uses a normal-equations-plus-Cholesky approach, so it is not a good fit for ill-conditioned systems.
+
 ## Requirements
 
 - macOS on Apple Silicon
