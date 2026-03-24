@@ -1,0 +1,12 @@
+include README.md
+include LICENSE
+include CMakeLists.txt
+include bindings.cpp
+recursive-include mlx_lstsq *.py
+recursive-include mps_cholesky *.h *.mm *.metal
+recursive-include tests *.py
+prune build
+prune data
+prune dist
+prune mlx_lstsq.egg-info
+global-exclude __pycache__ *.py[cod] *.so *.dylib *.metallib
